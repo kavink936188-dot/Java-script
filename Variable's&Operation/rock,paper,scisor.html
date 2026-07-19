@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Rock Paper Scissors</h1>
+
+<div class="buttons">
+    <button onclick="playGame('rock')">🪨 Rock</button>
+    <button onclick="playGame('paper')">📄 Paper</button>
+    <button onclick="playGame('scissors')">✂️ Scissors</button>
+</div>
+
+<div class="result">
+    <p id="user"></p>
+    <p id="computer"></p>
+    <h2 id="winner"></h2>
+</div>
+
+<script src="rock.js"></script>
+
+</body>
+</html>
+<style>
+    body{
+    font-family: Arial;
+    background:#222;
+    color:white;
+    text-align:center;
+    margin-top:80px;
+}
+
+h1{
+    font-size:40px;
+}
+
+button{
+    padding:15px 30px;
+    margin:10px;
+    font-size:20px;
+    cursor:pointer;
+    border:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.result{
+    margin-top:40px;
+    font-size:25px;
+}
+
+#winner{
+    color:yellow;
+}
+</style>
